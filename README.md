@@ -65,5 +65,41 @@
 </ul>
 <p>À la fin de votre présentation, l'évaluateur fera un débriefing pendant environ 5 minutes.</p></div>
 
+## Mon travail
+
+### Etape 1 : Corrigez les bugs
+
+<p>J'ai trouver trois érreur :</p>
+<ul>
+    <li><b>Faute de frappe :</b> Dans le fichier Controller.js à la ligne 110. la fonction adddItems => addItems</li>
+    <li><b>Obtimisation :</b> Dans le fichier Controller.js à la ligne 201. La boucle forEach n'est pas utile </li>
+    <li><b>Conflit d'id éventuel : </b>Dans le fichier Store.js à la ligne 109. L'id de chaque todo est definit par un nombre aleatoire de 6 chiffre. Un date stamps permet d'éviter tous rique de donner le même id a une todo.</li>
+</ul>
+
+### Etape 2 : où sont les tests ?!
+
+<p>Dans le fichier test/ControllerSpec.js. La plus part des tests était déjà crée. J'ai rajouter ceux manquant à  la ligne :</p>
+<ul>
+    <li><b>61 :</b> afficher les entrée au démarga</li>
+    <li><b>89 :</b> afficher les todo actives</li>
+    <li><b>102 :</b> afficher les todo completer</li>
+    <li><b>158 :</b> afficher le filtre "All" par default</li>
+    <li><b>167 :</b> afficher les todo active lors que le filtre des todo "active" est activer</li>
+    <li><b>177 :</b> passe toutes les todo au statut "active"</li>
+    <li><b>190 :</b> Actualiser le rendu</li>
+    <li><b>204 :</b> Ajouter une nouvelle todo au model</li>
+    <li><b>252 :</b> Suprimer une todo du model</li>
+</ul>
+
+###Etape 3 : optimisez la performance
+
+<p>Réalisation d'un audit concurentiel du principale concurent: Today's tasks. <br />
+Une aplication offrant beaucoup plus de fonctionaliter mais un code beauccoup moins performant.</p>
+<p>Ouvrire l'audit en ligne : <a href="https://docs.google.com/document/d/1qqEIrhS3FqS6eHbUacbCO91gB2Uj8oUndHPHufpPVF0/edit?usp=sharing">AUDIT</a></p>
+
+###Etape 4 : améliorez le projet
+
+<p>Réalisation d'une documentation sur le projet TODO</p>
+
 <p> Ouvrire la documentation en ligne : <a href="https://pierre-gonet.com/MyProject/TODO/documentation/">DOCUMENTATION</a></p>
 
