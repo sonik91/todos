@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding meta -->
+    
+
+    <!-- Adding external script-->
+    
+
+    <!-- Adding external style-->
+    
+
+    <!-- Adding scripts-->
+    
+
+    <!-- Adding style-->
+    
+
+    <!-- Adding overlay script-->
+    
+
+    <!-- Adding overlay style-->
+    
+
+
+    <title>
+      store.js
+    </title>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/third-party/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/third-party/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/heading.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-base.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-light.css">
+    
+    <svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    style="display:none">
+    <defs>
+        <symbol id="copy-icon" viewbox="0 0 488.3 488.3">
+            <g>
+                <path
+                    d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z" />
+                <path
+                    d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z" />
+            </g>
+        </symbol>
+        <symbol id='search-icon' viewBox="0 0 512 512">
+            <g>
+                <g>
+                    <path
+                        d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474    c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323    c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848    S326.847,409.323,225.474,409.323z" />
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path
+                        d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328    c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z" />
+                </g>
+            </g>
+        </symbol>
+        <symbol id="down-icon" viewBox="0 0 16 16">
+            <path 
+                fill-rule="evenodd" 
+                clip-rule="evenodd" 
+                d="M12.7803 6.21967C13.0732 6.51256 13.0732 6.98744 12.7803 7.28033L8.53033 11.5303C8.23744 11.8232 7.76256 11.8232 7.46967 11.5303L3.21967 7.28033C2.92678 6.98744 2.92678 6.51256 3.21967 6.21967C3.51256 5.92678 3.98744 5.92678 4.28033 6.21967L8 9.93934L11.7197 6.21967C12.0126 5.92678 12.4874 5.92678 12.7803 6.21967Z"
+            >
+            </path>
+        </symbol>
+    </defs>
+</svg>
+  </head>
+
+  <body>
+
+    <nav class="navbar" id="navbar">
+      <div class="navbar-heading" id="navbar-heading"><a href="index.html"><h2 class="navbar-heading-text">Home</h2></a></div><div class="search-box" id="search-box"><div class="search-box-input-container"><input class="search-box-input" type="text" placeholder="Search..." id="search-box-input" /><svg class="search-icon" alt="search-icon"><use xlink:href="#search-icon"></use></svg></div><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-main-content" id="sidebar-main-content"><div class="accordion collapsed" id="5675819" > <h3 class="accordion-heading">Classes<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion collapsed child" id=3987588><div class="accordion-heading child"><a href="Controller.html">Controller</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="Controller.html#._filter">_filter</a></li><li data-type='method'><a href="Controller.html#._updateCount">_updateCount</a></li><li data-type='method'><a href="Controller.html#._updateFilterState">_updateFilterState</a></li><li data-type='method'><a href="Controller.html#.addItem">addItem</a></li><li data-type='method'><a href="Controller.html#.editItem">editItem</a></li><li data-type='method'><a href="Controller.html#.editItemCancel">editItemCancel</a></li><li data-type='method'><a href="Controller.html#.editItemSave">editItemSave</a></li><li data-type='method'><a href="Controller.html#.removeCompletedItems">removeCompletedItems</a></li><li data-type='method'><a href="Controller.html#.removeItem">removeItem</a></li><li data-type='method'><a href="Controller.html#.showActive">showActive</a></li><li data-type='method'><a href="Controller.html#.showAll">showAll</a></li><li data-type='method'><a href="Controller.html#.showCompleted">showCompleted</a></li><li data-type='method'><a href="Controller.html#.toggleAll">toggleAll</a></li><li data-type='method'><a href="Controller.html#.toggleComplete">toggleComplete</a></li></ul></li><li class="accordion collapsed child" id=6264338><div class="accordion-heading child"><a href="Model.html">Model</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="Model.html#.create">create</a></li><li data-type='method'><a href="Model.html#.getCount">getCount</a></li><li data-type='method'><a href="Model.html#.read">read</a></li><li data-type='method'><a href="Model.html#.remove">remove</a></li><li data-type='method'><a href="Model.html#.removeAll">removeAll</a></li><li data-type='method'><a href="Model.html#.update">update</a></li></ul></li><li class="accordion collapsed child" id=9832864><div class="accordion-heading child"><a href="Store.html">Store</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="Store.html#.drop">drop</a></li><li data-type='method'><a href="Store.html#.find">find</a></li><li data-type='method'><a href="Store.html#.findAll">findAll</a></li><li data-type='method'><a href="Store.html#.remove">remove</a></li><li data-type='method'><a href="Store.html#.save">save</a></li></ul></li><li class="accordion collapsed child" id=3421748><div class="accordion-heading child"><a href="Template.html">Template</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="Template.html#.clearCompletedButton">clearCompletedButton</a></li><li data-type='method'><a href="Template.html#.itemCounter">itemCounter</a></li><li data-type='method'><a href="Template.html#.show">show</a></li></ul></li><li class="accordion collapsed child" id=5752333><div class="accordion-heading child"><a href="Todo.html">Todo</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="Todo.html#.controller">controller</a></li><li data-type='method'><a href="Todo.html#.model">model</a></li><li data-type='method'><a href="Todo.html#.storage">storage</a></li><li data-type='method'><a href="Todo.html#.template">template</a></li><li data-type='method'><a href="Todo.html#.view">view</a></li></ul></li><li class="accordion collapsed child" id=2708570><div class="accordion-heading child"><a href="View.html">View</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="View.html#._bindItemEditCancel">_bindItemEditCancel</a></li><li data-type='method'><a href="View.html#._bindItemEditDone">_bindItemEditDone</a></li><li data-type='method'><a href="View.html#._clearCompletedButton">_clearCompletedButton</a></li><li data-type='method'><a href="View.html#._editItem">_editItem</a></li><li data-type='method'><a href="View.html#._editItemDone">_editItemDone</a></li><li data-type='method'><a href="View.html#._elementComplete">_elementComplete</a></li><li data-type='method'><a href="View.html#._itemId">_itemId</a></li><li data-type='method'><a href="View.html#._removeItem">_removeItem</a></li><li data-type='method'><a href="View.html#._setFilter">_setFilter</a></li><li data-type='method'><a href="View.html#.bind">bind</a></li><li data-type='method'><a href="View.html#.render">render</a></li></ul></li></ul> </div><div class="accordion collapsed" id="208583" > <h3 class="accordion-heading">Global<svg><use xlink:href="#down-icon"></use></svg></h3><ul class="accordion-content"><li class="accordion collapsed child" id=6709374><div class="accordion-heading child"><a href="global.html#Helpers">Helpers</a><svg><use xlink:href="#down-icon"></use></svg></div><ul class='methods accordion-content'><li data-type='method'><a href="global.html#Helpers#.$delegate">$delegate</a></li><li data-type='method'><a href="global.html#Helpers#.$on">$on</a></li><li data-type='method'><a href="global.html#Helpers#.$parent">$parent</a></li><li data-type='method'><a href="global.html#Helpers#.qs">qs</a></li><li data-type='method'><a href="global.html#Helpers#.qsa">qsa</a></li></ul></li></ul> </div></div>
+      
+
+    </nav>
+    <div class="navbar-ham" id="navbar-ham">
+      <div>
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+      </div>
+    </div>
+
+    <div id="main" class="main-content">
+      
+      <h1 id='page-title' class="page-title">
+        store.js
+      </h1>
+      
+
+      
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*jshint eqeqeq:false */
+(function (window) {
+	'use strict';
+
+	/**
+	 * Crée un nouvel objet de stockage côté client et crée un objet vide
+	 * si aucun n'existe déjà.
+	 * 
+	 * @name Store
+	 * @constructor
+	 * @param {string} name Le nom de notre base de données que nous voulons utiliser
+	 * @param {function} callback faux appel a une base de doner dans le cas ou l'aplication aurra un stockage en ligne
+	 */
+	function Store(name, callback) {
+		callback = callback || function () {};
+
+		this._dbName = name;
+
+		if (!localStorage[name]) {
+			var data = {
+				todos: []
+			};
+
+			localStorage[name] = JSON.stringify(data);
+		}
+
+		callback.call(this, JSON.parse(localStorage[name]));
+	}
+
+	/**
+	 * Recherche des éléments en fonction d'une requête donnée en tant qu'objet JS
+	 *
+	 * @memberof Store
+	 * @function
+	 * @name find
+	 * @param {object} query La requête à comparer (i.e. {foo: 'bar'})
+	 * @param {function} callback	 Le rappel à déclencher lorsque la requête est terminer
+	 * 
+	 * @example
+	 * db.find({foo: 'bar', hello: 'world'}, function (data) {
+	 *	 // data renvera tous les ellement qui ont foo: bar et
+	 *	 // hello: world dans leur proprieter
+	 * });
+	 */
+	Store.prototype.find = function (query, callback) {
+		if (!callback) {
+			return;
+		}
+
+		var todos = JSON.parse(localStorage[this._dbName]).todos;
+
+		callback.call(this, todos.filter(function (todo) {
+			for (var q in query) {
+				if (query[q] !== todo[q]) {
+					return false;
+				}
+			}
+			return true;
+		}));
+	};
+
+	/**
+	 * Récupérera toutes les données de la collection
+	 * 
+	 * @memberof Store
+	 * @function
+	 * @name findAll
+	 * @param {function} callback Le rappel à déclencher lors de la récupération des données
+	 */
+	Store.prototype.findAll = function (callback) {
+		callback = callback || function () {};
+		callback.call(this, JSON.parse(localStorage[this._dbName]).todos);
+	};
+
+	/**
+	 * Sauvegardera les données fournies dans la base de données. Si aucun élément n'existe, il créera un nouveau
+	 * élément, sinon il mettra simplement à jour les propriétés d'un élément existant
+	 *
+	 * @memberof Store
+	 * @function
+	 * @name save
+	 * @param {object} updateData Les données à sauvegarder dans la base de données
+	 * @param {function} callback la fonction de rapelle apres la sauvegarde
+	 * @param {number} id Un paramètre facultatif pour saisir l'ID d'un élément à mettre à jour
+	 */
+	Store.prototype.save = function (updateData, callback, id) {
+		var data = JSON.parse(localStorage[this._dbName]);
+		var todos = data.todos;
+
+		callback = callback || function () {};
+
+		// If an ID was actually given, find the item and update each property
+		if (id) {
+			for (var i = 0; i &lt; todos.length; i++) {
+				if (todos[i].id === id) {
+					for (var key in updateData) {
+						todos[i][key] = updateData[key];
+					}
+					break;
+				}
+			}
+
+			localStorage[this._dbName] = JSON.stringify(data);
+			callback.call(this, todos);
+		} else {
+
+    		// Assign an ID
+			//updateData.id = parseInt(newId);
+			updateData.id = Date.now();//genere un date stamps pour evité d'avoir deux fois le même id
+    
+
+			todos.push(updateData);
+			localStorage[this._dbName] = JSON.stringify(data);
+			callback.call(this, [updateData]);
+		}
+	};
+
+	/**
+	 * Supprime un article du magasin en fonction de son identifiant
+	 *
+	 * @memberof Store
+	 * @function
+	 * @name remove
+	 * @param {number} id Id de l'ellement a suprimer
+	 * @param {function} callback Function de rappele apres la supresion
+	 */
+	Store.prototype.remove = function (id, callback) {
+		var data = JSON.parse(localStorage[this._dbName]);
+		var todos = data.todos;
+		var todoId;
+		
+		for (var i = 0; i &lt; todos.length; i++) {
+			if (todos[i].id == id) {
+				todoId = todos[i].id;
+			}
+		}
+
+		for (var i = 0; i &lt; todos.length; i++) {
+			if (todos[i].id == todoId) {
+				todos.splice(i, 1);
+			}
+		}
+
+		localStorage[this._dbName] = JSON.stringify(data);
+		callback.call(this, todos);
+	};
+
+	/**
+	 * Va abandonner tout le stockage et recommencer à zéro
+	 *
+	 * @memberof Store
+	 * @function
+	 * @name drop
+	 * @param {function} callback Le rappel à déclencher après la suppression des données
+	 */
+	Store.prototype.drop = function (callback) {
+		var data = {todos: []};
+		localStorage[this._dbName] = JSON.stringify(data);
+		callback.call(this, data.todos);
+	};
+
+	// Export to window
+	window.app = window.app || {};
+	window.app.Store = Store;
+})(window);</code></pre>
+        </article>
+    </section>
+
+
+
+
+    </div>
+
+    <footer class="footer" id="footer">
+      
+    </footer>
+
+    <script src="scripts/third-party/prettify.js"></script>
+    <script src="scripts/third-party/lang-css.js"></script>
+    <script type="text/javascript" src="scripts/misc.js"></script>
+
+    <script>prettyPrint();</script>
+    <script src="scripts/linenumber.js"></script>
+    <script src="scripts/fix-code-block.js"></script>
+    <script src="scripts/fix-navbar.js"></script>
+    
+      <script src="scripts/search.js"></script>
+      <script src="scripts/third-party/fuse.js"></script>
+      <script>
+        var list = [{"title":"Controller","link":"<a href=\"Controller.html\">Controller</a>"},{"title":"Controller._filter","link":"<a href=\"Controller.html#._filter\">Controller._filter &rtrif; undefined</a>"},{"title":"Controller._updateCount","link":"<a href=\"Controller.html#._updateCount\">Controller._updateCount &rtrif; undefined</a>"},{"title":"Controller._updateFilterState","link":"<a href=\"Controller.html#._updateFilterState\">Controller._updateFilterState &rtrif; undefined</a>"},{"title":"Controller.addItem","link":"<a href=\"Controller.html#.addItem\">Controller.addItem &rtrif; undefined</a>"},{"title":"Controller.editItem","link":"<a href=\"Controller.html#.editItem\">Controller.editItem &rtrif; undefined</a>"},{"title":"Controller.editItemCancel","link":"<a href=\"Controller.html#.editItemCancel\">Controller.editItemCancel &rtrif; undefined</a>"},{"title":"Controller.editItemSave","link":"<a href=\"Controller.html#.editItemSave\">Controller.editItemSave &rtrif; undefined</a>"},{"title":"Controller.removeCompletedItems","link":"<a href=\"Controller.html#.removeCompletedItems\">Controller.removeCompletedItems &rtrif; undefined</a>"},{"title":"Controller.removeItem","link":"<a href=\"Controller.html#.removeItem\">Controller.removeItem &rtrif; undefined</a>"},{"title":"Controller.showActive","link":"<a href=\"Controller.html#.showActive\">Controller.showActive &rtrif; undefined</a>"},{"title":"Controller.showAll","link":"<a href=\"Controller.html#.showAll\">Controller.showAll &rtrif; undefined</a>"},{"title":"Controller.showCompleted","link":"<a href=\"Controller.html#.showCompleted\">Controller.showCompleted &rtrif; undefined</a>"},{"title":"Controller.toggleAll","link":"<a href=\"Controller.html#.toggleAll\">Controller.toggleAll &rtrif; undefined</a>"},{"title":"Controller.toggleComplete","link":"<a href=\"Controller.html#.toggleComplete\">Controller.toggleComplete &rtrif; undefined</a>"},{"title":"Model","link":"<a href=\"Model.html\">Model</a>"},{"title":"Model.create","link":"<a href=\"Model.html#.create\">Model.create &rtrif; undefined</a>"},{"title":"Model.getCount","link":"<a href=\"Model.html#.getCount\">Model.getCount &rtrif; undefined</a>"},{"title":"Model.read","link":"<a href=\"Model.html#.read\">Model.read &rtrif; undefined</a>"},{"title":"Model.remove","link":"<a href=\"Model.html#.remove\">Model.remove &rtrif; undefined</a>"},{"title":"Model.removeAll","link":"<a href=\"Model.html#.removeAll\">Model.removeAll &rtrif; undefined</a>"},{"title":"Model.update","link":"<a href=\"Model.html#.update\">Model.update &rtrif; undefined</a>"},{"title":"Store","link":"<a href=\"Store.html\">Store</a>"},{"title":"Store.drop","link":"<a href=\"Store.html#.drop\">Store.drop &rtrif; undefined</a>"},{"title":"Store.find","link":"<a href=\"Store.html#.find\">Store.find &rtrif; undefined</a>"},{"title":"Store.findAll","link":"<a href=\"Store.html#.findAll\">Store.findAll &rtrif; undefined</a>"},{"title":"Store.remove","link":"<a href=\"Store.html#.remove\">Store.remove &rtrif; undefined</a>"},{"title":"Store.save","link":"<a href=\"Store.html#.save\">Store.save &rtrif; undefined</a>"},{"title":"Template","link":"<a href=\"Template.html\">Template</a>"},{"title":"Template.clearCompletedButton","link":"<a href=\"Template.html#.clearCompletedButton\">Template.clearCompletedButton &rtrif; undefined</a>"},{"title":"Template.itemCounter","link":"<a href=\"Template.html#.itemCounter\">Template.itemCounter &rtrif; undefined</a>"},{"title":"Template.show","link":"<a href=\"Template.html#.show\">Template.show &rtrif; undefined</a>"},{"title":"Todo","link":"<a href=\"Todo.html\">Todo</a>"},{"title":"Todo.controller","link":"<a href=\"Todo.html#.controller\">Todo.controller &rtrif; undefined</a>"},{"title":"Todo.model","link":"<a href=\"Todo.html#.model\">Todo.model &rtrif; undefined</a>"},{"title":"Todo.storage","link":"<a href=\"Todo.html#.storage\">Todo.storage &rtrif; undefined</a>"},{"title":"Todo.template","link":"<a href=\"Todo.html#.template\">Todo.template &rtrif; undefined</a>"},{"title":"Todo.view","link":"<a href=\"Todo.html#.view\">Todo.view &rtrif; undefined</a>"},{"title":"View","link":"<a href=\"View.html\">View</a>"},{"title":"View._bindItemEditCancel","link":"<a href=\"View.html#._bindItemEditCancel\">View._bindItemEditCancel &rtrif; undefined</a>"},{"title":"View._bindItemEditDone","link":"<a href=\"View.html#._bindItemEditDone\">View._bindItemEditDone &rtrif; undefined</a>"},{"title":"View._clearCompletedButton","link":"<a href=\"View.html#._clearCompletedButton\">View._clearCompletedButton &rtrif; undefined</a>"},{"title":"View._editItem","link":"<a href=\"View.html#._editItem\">View._editItem &rtrif; undefined</a>"},{"title":"View._editItemDone","link":"<a href=\"View.html#._editItemDone\">View._editItemDone &rtrif; undefined</a>"},{"title":"View._elementComplete","link":"<a href=\"View.html#._elementComplete\">View._elementComplete &rtrif; undefined</a>"},{"title":"View._itemId","link":"<a href=\"View.html#._itemId\">View._itemId &rtrif; undefined</a>"},{"title":"View._removeItem","link":"<a href=\"View.html#._removeItem\">View._removeItem &rtrif; undefined</a>"},{"title":"View._setFilter","link":"<a href=\"View.html#._setFilter\">View._setFilter &rtrif; undefined</a>"},{"title":"View.bind","link":"<a href=\"View.html#.bind\">View.bind &rtrif; undefined</a>"},{"title":"View.render","link":"<a href=\"View.html#.render\">View.render &rtrif; undefined</a>"},{"title":"Helpers","link":"<a href=\"global.html#Helpers\">Helpers</a>"},{"title":"Helpers.$delegate","link":"<a href=\"global.html#Helpers#.$delegate\">Helpers.$delegate &rtrif; undefined</a>"},{"title":"Helpers.$on","link":"<a href=\"global.html#Helpers#.$on\">Helpers.$on &rtrif; undefined</a>"},{"title":"Helpers.$parent","link":"<a href=\"global.html#Helpers#.$parent\">Helpers.$parent &rtrif; undefined</a>"},{"title":"Helpers.qs","link":"<a href=\"global.html#Helpers#.qs\">Helpers.qs &rtrif; undefined</a>"},{"title":"Helpers.qsa","link":"<a href=\"global.html#Helpers#.qsa\">Helpers.qsa &rtrif; undefined</a>"}];
+        var options = 
+          setupSearch(list, options)
+      </script>
+    
+
+    
+
+    
+
+    
+
+    
+
+
+  </body>
+
+</html>

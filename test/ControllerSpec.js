@@ -88,8 +88,9 @@ describe('controller', function () {
 
 		it('should show active entries', function () {
 			// TODO: write test
+			//teste model et view en meme temps
 
-			var todo = {title: 'my todo', completed: false};
+			var todo = {title: 'teste', completed: false};
 			setUpModel([todo]);
 
 			subject.setView('#/active');
@@ -100,8 +101,9 @@ describe('controller', function () {
 
 		it('should show completed entries', function () {
 			// TODO: write test
+			//teste model et view en meme temps
 
-			var todo = {title: 'my todo', completed: true};
+			var todo = {title: 'teste', completed: true};
 			setUpModel([todo]);
 
 			subject.setView('#/completed');
@@ -187,7 +189,7 @@ describe('controller', function () {
 
 		it('should update the view', function () {
 			// TODO: write test
-			var todos = [{id: 1, title: 'my todo',	completed: false}];
+			var todos = [{id: 1, title: 'teste',	completed: false}];
 
 			setUpModel(todos);
 			subject.setView('');
@@ -205,9 +207,9 @@ describe('controller', function () {
 
 			subject.setView('');
 
-			view.trigger('newTodo', 'a new todo');
+			view.trigger('newTodo', 'teste');
 
-			expect(model.create).toHaveBeenCalledWith('a new todo', jasmine.any(Function));
+			expect(model.create).toHaveBeenCalledWith('teste', jasmine.any(Function));
 
 		});
 
