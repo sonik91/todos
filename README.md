@@ -65,3 +65,5 @@
 </ul>
 <p>À la fin de votre présentation, l'évaluateur fera un débriefing pendant environ 5 minutes.</p></div>
 
+<p> Ouvrire la documentation en ligne : <a href:"https://pierre-gonet.com/MyProject/TODO/documentation/">DOCUMENTATION</a></p>
+
