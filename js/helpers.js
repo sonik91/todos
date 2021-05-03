@@ -1,20 +1,12 @@
 /*global NodeList */
 (function (window) {
 	'use strict';
-
-	/**
-	 * ensemble de fonction global
-	 * @name Helpers
-	 * @global
-	 */
-
 	
 	/**
 	 * retourne un element du dom par selecteur css
 	 * 
 	 * @name qs
 	 * @function
-	 * @memberof Helpers
 	 * @param  {} selector selecteur css
 	 * @param  {} scope element parent si besoin
 	 */
@@ -25,7 +17,6 @@
 	 * retourne un tableau d'ellement du DOM par selecteur css
 	 * @name qsa
 	 * @function
-	 * @memberof Helpers
 	 * @param  {} selector sellecteur css
 	 * @param  {} scope element parent si besoin
 	 */
@@ -37,7 +28,6 @@
 	 * cree un addEventListener
 	 * @name $on 
 	 * @function
-	 * @memberof Helpers
 	 * @param  {} target ellement cible
 	 * @param  {} type type d'evenement
 	 * @param  {} callback fonction a executer
@@ -53,7 +43,6 @@
 	 * fonction de dispatchement d'un evenement a tous les ellement correspondant au selecteur
 	 * @name $delegate
 	 * @function
-	 * @memberof Helpers
 	 * @param  {} target ellement qui declenche l'evenement
 	 * @param  {} selector selecteur css des elements cible
 	 * @param  {} type type de propagation de l'evenement 
@@ -82,7 +71,6 @@
 	 * fonction qui retourne l'element parent d'un element du dom
 	 * @name $parent
 	 * @function
-	 * @memberof Helpers
 	 * @param  {} element element du dom 
 	 * @param  {} tagName selecteur css 
 	 * @returns { Object } ellement du dom parent
