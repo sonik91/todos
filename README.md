@@ -91,13 +91,13 @@
     <li><b>252 :</b> Suprimer une todo du model</li>
 </ul>
 
-###Etape 3 : optimisez la performance
+### Etape 3 : optimisez la performance
 
 <p>Réalisation d'un audit concurentiel du principale concurent: Today's tasks. <br />
 Une aplication offrant beaucoup plus de fonctionaliter mais un code beauccoup moins performant.</p>
 <p>Ouvrire l'audit en ligne : <a href="https://docs.google.com/document/d/1qqEIrhS3FqS6eHbUacbCO91gB2Uj8oUndHPHufpPVF0/edit?usp=sharing">AUDIT</a></p>
 
-###Etape 4 : améliorez le projet
+### Etape 4 : améliorez le projet
 
 <p>Réalisation d'une documentation sur le projet TODO</p>
 
