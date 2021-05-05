@@ -80,7 +80,7 @@
 
 <p>Dans le fichier test/ControllerSpec.js. La plus part des tests était déjà crée. J'ai rajouter ceux manquant à  la ligne :</p>
 <ul>
-    <li><b>61 :</b> afficher les entrée au démarga</li>
+    <li><b>61 :</b> afficher les entrée au démarage</li>
     <li><b>89 :</b> afficher les todo actives</li>
     <li><b>102 :</b> afficher les todo completer</li>
     <li><b>158 :</b> afficher le filtre "All" par default</li>
