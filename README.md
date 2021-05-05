@@ -101,5 +101,6 @@ Une aplication offrant beaucoup plus de fonctionaliter mais un code beauccoup mo
 
 <p>Réalisation d'une documentation sur le projet TODO</p>
 
-<p> Ouvrire la documentation en ligne : <a href="https://pierre-gonet.com/MyProject/TODO/documentation/">DOCUMENTATION</a></p>
+<p> Ouvrire la documentation fonctionnelle en ligne : <a href="https://pierre-gonet.com/MyProject/TODO/documentation/">DOCUMENTATION FONCTIONNELLE</a></p>
+<p> Ouvrire la documentation utilisateur en ligne : <a href="https://github.com/sonik91/todos/wiki/documentation-utilisateur"> DOCUMENTATION UTILISATEUR</a></p>
 
